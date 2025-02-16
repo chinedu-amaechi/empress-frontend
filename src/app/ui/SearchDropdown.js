@@ -1,3 +1,5 @@
+// src/app/ui/SearchDropdown.js
+
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import ReactDOM from "react-dom";

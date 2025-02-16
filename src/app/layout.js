@@ -1,3 +1,5 @@
+// src/app/layout.js
+
 import { Open_Sans } from "next/font/google";
 import Chatbot from "./features/Chatbot";
 import { Toaster } from "react-hot-toast";

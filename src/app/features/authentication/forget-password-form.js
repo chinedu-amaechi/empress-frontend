@@ -1,3 +1,5 @@
+// src/app/features/authentication/forget-password-form.js
+
 import Button from "@/app/ui/Button";
 import Heading from "@/app/ui/Heading";
 import Link from "next/link";
@@ -14,7 +16,7 @@ function ForgetPasswordForm() {
         <form className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Email 
+              Email
             </label>
             <input
               type="email"

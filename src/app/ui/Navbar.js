@@ -1,3 +1,5 @@
+// src/app/ui/Navbar.js
+
 "use client";
 
 import Image from "next/image";

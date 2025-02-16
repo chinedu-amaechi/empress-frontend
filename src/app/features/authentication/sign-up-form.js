@@ -1,3 +1,5 @@
+// src/app/features/authentication/sign-up-form.js
+
 "use client";
 
 import Button from "@/app/ui/Button";
@@ -88,7 +90,7 @@ function SignUpForm() {
           <div className="flex space-x-4">
             <div className="w-1/2">
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                First Name 
+                First Name
               </label>
               <input
                 type="text"

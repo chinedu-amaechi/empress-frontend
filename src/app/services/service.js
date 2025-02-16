@@ -1,3 +1,5 @@
+// src/app/services/service.js
+
 const BACKEND_URL = "http://localhost:8000";
 
 export async function createCustomerAccount(userInput) {

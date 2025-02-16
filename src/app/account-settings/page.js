@@ -1,3 +1,5 @@
+// src/app/account-settings/page.js
+
 function AccountSettings() {
   return (
     <div>

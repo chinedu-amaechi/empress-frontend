@@ -1,8 +1,10 @@
-'use client';
+// src/app/ui/Cartcontext.js
 
-import React, { createContext, useContext, useState } from 'react';
+"use client";
 
-import BraceletExample from '../../../public/bracelet_ex.png'
+import React, { createContext, useContext, useState } from "react";
+
+import BraceletExample from "../../../public/bracelet_ex.png";
 
 const CartContext = createContext();
 
@@ -39,4 +41,3 @@ export const CartProvider = ({ children }) => {
 };
 
 export const useCart = () => useContext(CartContext);
-
