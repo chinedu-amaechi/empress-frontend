@@ -1,3 +1,5 @@
+// src/app/products/page.js
+
 function Products() {
   return (
     <div>

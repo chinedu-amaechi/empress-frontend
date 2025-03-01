@@ -1,3 +1,5 @@
+// src/app/auth/forget-password/page.js
+
 import ForgetPasswordForm from "@/app/features/authentication/forget-password-form";
 import React from "react";
 

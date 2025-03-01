@@ -1,3 +1,5 @@
+// src/app/auth/sign-up/page.js
+
 "use client";
 import SignUpForm from "@/app/features/authentication/sign-up-form";
 import Link from "next/link";
