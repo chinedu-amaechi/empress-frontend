@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="flex flex-row bg-blue-900 text-yellow-400 p-4 pb-[120px]">
+    <div className="flex flex-row bg-blue-900 text-yellow-400 p-4 pb-10">
       {/* Links Section */}
       <div className="flex flex-col">
         <div className="w-15 m-2">
