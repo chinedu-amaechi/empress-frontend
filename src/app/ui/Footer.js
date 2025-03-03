@@ -12,10 +12,10 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <div className="flex flex-row bg-blue-900 text-yellow-400 p-4 pb-[120px]">
-      {/* Links Section  */}
+      {/* Links Section */}
       <div className="flex flex-col">
         <div className="w-15 m-2">
-          <Image src={EmpressLogo} width={70} height={70} alt="Empress Logo" />
+          <Image src={EmpressLogo} width={150} alt="Empress Logo" />
         </div>
         <div className="mx-4 py-2 cursor-pointer">
           <button className="transition delay-150 duration-300 ease-in-out hover:scale-125">
@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Use Cases Section  */}
+      {/* Use Cases Section */}
       <div className="flex flex-col mx-20">
         <div className="py-4 font-semibold cursor-pointer">Use Cases</div>
         <div className="flex flex-col cursor-pointer">
@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Use Cases Section  */}
+      {/* Explore Section */}
       <div className="flex flex-col mx-10">
         <div className="py-4 font-semibold cursor-pointer">Explore</div>
         <div className="flex flex-col cursor-pointer">
@@ -61,9 +61,9 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Resources Section  */}
+      {/* Resources Section */}
       <div className="flex flex-col mx-10 cursor-pointer">
-        <div className="py-4 font-semibold ">Resources</div>
+        <div className="py-4 font-semibold">Resources</div>
         <div className="flex flex-col">
           <p className="py-1">Blog</p>
           <p className="py-1">Best practices</p>
