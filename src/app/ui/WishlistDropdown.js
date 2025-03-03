@@ -7,6 +7,7 @@ import Image from "next/image";
 import { FaRegHeart } from "react-icons/fa";
 import ReactDOM from "react-dom";
 import BraceletExample from "../../../public/bracelet_ex.png";
+import Link from "next/link";
 
 const WishlistDropdown = () => {
   const routerWishlist = useRouter();
@@ -73,17 +74,17 @@ const WishlistDropdown = () => {
         <WishlistItem />
         <WishlistItem />
         <WishlistItem />
-        <div
+        <Link
           className="group flex justify-center items-center w-fit p-2 my-1"
-          onClick={() => navigateTo("/pages/wishlist")}
+          href="/wishlist"
         >
           <button className="relative font-semibold">
             View Wishlist
             <span className="absolute left-0 bottom-[2px] h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
           </button>
+          </Link>
         </div>
       </div>
-    </div>
   );
 
   return (
@@ -93,12 +94,12 @@ const WishlistDropdown = () => {
       onMouseLeave={handleMouseLeave}
       ref={wishlistIconRef}
     >
-      <div
-        className="flex flex-col justify-center items-center cursor-pointer"
-        onClick={() => navigateTo("/pages/wishlist")}
-      >
+        <Link
+           className="flex flex-col justify-center items-center cursor-pointer"
+          href="/wishlist"
+        >
         <FaRegHeart size={20} />
-      </div>
+        </Link>
       {wishlistDropdown &&
         ReactDOM.createPortal(wishlistDropdownContent, document.body)}
     </div>
