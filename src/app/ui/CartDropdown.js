@@ -10,6 +10,7 @@ import { FaRegTrashCan } from "react-icons/fa6";
 import { FaHeart } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const CartDropdown = ({}) => {
   const routerCart = useRouter();
@@ -88,15 +89,15 @@ const CartDropdown = ({}) => {
         )}
         {cartItems.length > 0 && (
           <li>
-            <div
+            <Link
               className="group flex justify-center items-center w-fit p-2 my-1"
-              onClick={() => navigateTo("/pages/cart")}
+              href ="/cart"
             >
               <button className="relative text-lg font-semibold">
                 View Cart
                 <span className="absolute left-0 bottom-[2px] h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
               </button>
-            </div>
+            </Link>
           </li>
         )}
       </ul>
@@ -110,12 +111,12 @@ const CartDropdown = ({}) => {
       onMouseLeave={handleMouseLeave}
       ref={cartIconRef}
     >
-      <div
+      <Link
         className="flex flex-col justify-center items-center cursor-pointer"
-        onClick={() => navigateTo("/pages/cart")}
+        href="/cart"
       >
         <IoCartOutline size={24} />
-      </div>
+      </Link>
       {cartDropdown &&
         ReactDOM.createPortal(cartDropdownContent, document.body)}
     </div>

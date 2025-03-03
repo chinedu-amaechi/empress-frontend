@@ -16,7 +16,7 @@ export default function NavBar() {
   const [scrolledIntro, setScrolledIntro] = useState(false);
 
   const handleScroll = () => {
-    const introHeight = document.getElementById("introduction").offsetHeight;
+   const introHeight = document.getElementById("introduction").offsetHeight;
 
     if (window.scrollY > introHeight) {
       setScrolledIntro(true);
