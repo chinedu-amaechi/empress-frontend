@@ -1,5 +1,3 @@
-// src/app/layout.js
-
 import { Open_Sans } from "next/font/google";
 import Chatbot from "./features/Chatbot";
 import { Toaster } from "react-hot-toast";
@@ -21,11 +19,11 @@ export default function RootLayout({ children }) {
   return (
     <CartProvider>
       <html lang="en">
-        <body className={`${openSans.className}`}>
-          <header className=" sticky top-0 left-0 z-50">
+        <body className={`${openSans.className} flex flex-col min-h-screen`}>
+          <header className="sticky top-0 left-0 z-50">
             <NavBar />
           </header>
-          {children}
+          <main className="flex-grow">{children}</main>
           <Chatbot />
           <Footer />
           <Toaster />
